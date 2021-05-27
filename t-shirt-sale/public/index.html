@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>T-Shirt-Sale</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Paypal Integretion-->
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <!--<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>-->
+  </head>
+  <body>
+    <div id="logo">
+      <table id ="inhalte-werden-zentriert">
+        <tr> <th><a href="index.html"><img src="img/logo/logo.jpg" alt="Logo" width="200" height="150"></a></th>
+        <th><h1>T-Shirt-Verkauf</h1></th></tr>
+      </table>
+    </div>
+
+
+    <div id="navigation" class="top-level-navigation">
+    </div>
+
+    <div id="scrollView" class="produktOverView">
+
+    </div>
+
+    <div class="produkt" id="produkt">
+    </div> 
+    
+    <div id="footer">
+      <p>
+        Test<br>
+        Impressum<br>
+      </p>
+    </div>
+
+    <!--Firebase Connection-->
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
+      var firebaseConfig = {
+        apiKey: "AIzaSyC4D_LKPyFeHENsluYdhTEGPPcvcPXqMvE",
+        authDomain: "t-shirt-verkauf.firebaseapp.com",
+        projectId: "t-shirt-verkauf",
+        storageBucket: "t-shirt-verkauf.appspot.com",
+        messagingSenderId: "558345606207",
+        appId: "1:558345606207:web:0bfcf4ed4dd56ec401d48a",
+        measurementId: "G-5VBW128VXL"
+      };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        //firebase.analytics();
+      </script>
+    
+      <script>
+      // make auth and firestore references
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        db.settings({ timestampsInSnapshots: true });
+      </script>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
