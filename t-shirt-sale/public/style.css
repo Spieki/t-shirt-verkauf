@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.produkt img {
+  width: 80%;
+  max-width: 240px;
+}
+
+#navigation {
+  margin-bottom: 24px;
+}
+
+#navigation .link {
+  padding: 24px;
+}
+
+#navigation .link:hover {
+  background-color: rgb(218, 219, 231);
+  cursor: pointer;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inhalte-werden-zentriert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
